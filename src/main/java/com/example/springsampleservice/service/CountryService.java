@@ -9,4 +9,6 @@ public interface CountryService {
     List<Country> getAllCountries();
 
     Country getCountryById(Integer id);
+
+    Country getCountryByName(String name);
 }

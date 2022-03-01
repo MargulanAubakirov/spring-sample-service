@@ -22,4 +22,9 @@ public class CountryServiceImpl implements CountryService {
     public Country getCountryById(Integer id) {
         return countryRepository.findById(id).get();
     }
+
+    @Override
+    public Country getCountryByName(String name) {
+        return countryRepository.findByName(name);
+    }
 }
